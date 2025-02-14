@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Personality Quiz</h1>
+    <div id="quiz-container">
+        <div class="question">
+            <p>What’s your favorite activity?</p>
+            <button onclick="selectAnswer('A')">Reading</button>
+            <button onclick="selectAnswer('B')">Sports</button>
+            <button onclick="selectAnswer('C')">Gaming</button>
+        </div>
+
+        <div class="question">
+            <p>Pick a pet:</p>
+            <button onclick="selectAnswer('A')">Dog</button>
+            <button onclick="selectAnswer('B')">Cat</button>
+            <button onclick="selectAnswer('C')">Bird</button>
+        </div>
+
+        <div class="question">
+            <p>Choose a drink:</p>
+            <button onclick="selectAnswer('A')">Coffee</button>
+            <button onclick="selectAnswer('B')">Tea</button>
+            <button onclick="selectAnswer('C')">Juice</button>
+        </div>
+
+        <button id="submit" onclick="showResult()">See Result</button>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <h2>Your Personality Type is:</h2>
+        <p id="result"></p>
+        <button onclick="restartQuiz()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
